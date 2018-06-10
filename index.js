@@ -1,7 +1,7 @@
 const fisherman = require('fisherman-discord.js')
 const CoreCommands = require('./coreCommands')
 const options = require('./options.json')
-var bot = new fisherman.Fisherman({ prefixes: ['fish!'] })
+var bot = new fisherman.Fisherman({ prefixes: ['fish!', 'test!'] })
 var middleware = new CoreCommands()
 bot.use(middleware)
 var register = bot.createRegister('test', 'Demo 🎣')
